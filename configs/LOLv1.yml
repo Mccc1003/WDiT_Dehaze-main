@@ -1,0 +1,42 @@
+data:
+    type: "LLdataset"
+    train_dataset: "Dense"
+    test_dataset: "Dense"
+    patch_size: 256
+    channels: 3
+    num_workers: 2
+    data_dir: "/root/shared-nvme"
+    ckpt_dir: "ckpt/"
+    conditional: True
+
+model:
+    in_channels: 3
+    out_ch: 3
+    ch: 64
+    ch_mult: [1, 2, 3, 4]
+    num_res_blocks: 2
+    dropout: 0.0
+    ema_rate: 0.999
+    ema: True
+    resamp_with_conv: True
+    patch_size: 4
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 400
+
+training:
+    batch_size: 8 
+    n_epochs: 5000
+    validation_freq: 5000
+
+optim:
+    weight_decay: 0.000
+    optimizer: "Adam"
+    lr: 0.0004
+    amsgrad: False
+    eps: 0.00000001
+    step_size: 30
+    gamma: 0.8
