@@ -1,6 +1,6 @@
 # Wavelet-based diffusion transformer for image dehazing
 
-Cheng Ma, Guojun Liu, Jing Yue, Wavelet-based diffusion transformer for image dehazing, Pattern Recognition Letters, Volume 201, 2026, Pages 58-65, ISSN 0167-8655, https://doi.org/10.1016/j.patrec.2026.01.016.
+Cheng Ma, Guojun Liu, Jing Yue, Wavelet-based diffusion transformer for image dehazing, Pattern Recognition Letters, Volume 201, 2026, Pages 58-65, ISSN 0167-8655, doi: 10.1016/j.patrec.2026.01.016.
 
 
 Abstract
